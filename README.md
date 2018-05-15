@@ -19,6 +19,6 @@ Undefined symbols for architecture x86_64:
 +[UMUtils deflatedDataPrefixedWith:level:source:] in UMCommon(UMUtils.o)
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
-解决办法：在Other Linker Flags 加入 -lz
+<hr> 解决办法：在Other Linker Flags 加入 -lz
 
 
