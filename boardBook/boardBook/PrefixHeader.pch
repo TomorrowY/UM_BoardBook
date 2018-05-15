@@ -1,0 +1,33 @@
+//
+//  PrefixHeader.pch
+//  boardBook
+//
+//  Created by admin on 2018/5/14.
+//  Copyright © 2018年 JC. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UMShare/UMShare.h>
+#import <UMCommon/UMCommon.h>
+
+//iPhone X适配
+#define KStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#define KNavBarHeight 44.0
+#define KTabBarHeight  ([[UIApplication sharedApplication] statusBarFrame].size.height > 20?83:49)
+#define KtopHeitht (KStatusBarHeight + KNavBarHeight)
+
+#define kScreenHeight     [ [ UIScreen mainScreen ] bounds ].size.height
+#define kScreenWidth      [ [ UIScreen mainScreen ] bounds ].size.width
+
+
+
+typedef NS_ENUM(NSInteger) {
+    QQ_InfoType,
+    WeChar_InfoType,
+    Sina_InfoType,
+    Alipay_InfoType
+}LoginAuthType;
+
+#endif /* PrefixHeader_pch */
